@@ -79,12 +79,15 @@
 					</ul>
 				</li>
 				<li class="nav-item  has-treeview">
-					<a class="nav-link  order" href="#">
+					<a class="nav-link  order">
 						<p>Đơn Hàng</p>
 					</a>                                              
 					<ul class="nav nav-treeview order-treeview" style="display:none">
 						<li class="nav-item">
-							<a class="nav-link " href="#">Xem Đơn Hàng</a>
+							<a class="nav-link " href="{{route('view-order')}}">Xem Đơn Hàng</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="#">Tạo Đon Hàng</a>
 						</li>
 					</ul>
 				</li>
@@ -107,7 +110,7 @@
 			</ul>
 		</aside>
 		<div class='content'>
-		@yield('content');
+		@yield('content')
 		</div>
 	</div>
 </body>

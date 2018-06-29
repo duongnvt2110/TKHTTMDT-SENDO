@@ -242,9 +242,9 @@ class sendo
 	
 	public function getshopId()
 	{
-		if(file_exists("../classes/cookie.txt"))
+		if(file_exists("../Classes/cookie.txt"))
 		{
-			$myfile = file_get_contents("C:\/xampp\/htdocs\/Sendo\/php\/cookie.txt");
+			$myfile = file_get_contents("../Classes/cookie.txt");
 			$check=preg_match('/storeid\s(.*?)\s/',$myfile,$result);
 			// if ($check===0)
 			// {
@@ -256,7 +256,7 @@ class sendo
 
 	public function getshopName()
 	{
-		$myfile = file_get_contents("C:\/xampp\/htdocs\/Sendo\/php\/cookie.txt");
+		$myfile = file_get_contents("../Classes/cookie.txt");
 		$check=preg_match('/storename\s(.*?)\s/',$myfile,$result);
 		return $result[1];
 	}
@@ -264,9 +264,29 @@ class sendo
 	public function delete_cookie()
 	{
 		//check
-		unlink('../classes/cookie.txt');
+		unlink('../Classes/cookie.txt');
 	}
-	
+	// Order
+	public function view_all_order()
+	{
+		$GLOBALS['http']=new curl('');
+		date_default_timezone_set('Asia/Ho_Chi_Minh');
+		$today = date("d/m/Y"); 
+		// print_r($today);
+		$GLOBALS['http']->setContentType('Content-Type: application/json; charset=utf-8'); //set content type
+		$_dataSend='{"SalesOrderStatus":"Total","Page":{"CurrentPage":1,"PageSize":10},"SortName":"OrderDate","SortDesc":"-DESC","OrderBy":"OrderDate-DESC","CarrierName":"ALL","OrderDate":"14/04/2018-29/06/2018","OrderDateFrom":"14/04/2018","OrderDateTo":"29/06/2018","errors":[],"__moduleId__":"models/salesorder/m.salesordersearch"}';
+		$GLOBALS['http']->setPost($_dataSend);
+		$_url='https://ban.sendo.vn/SalesOrder/SearchSalesOrder';
+		$GLOBALS['http']->setReferer('https://ban.sendo.vn/shop');
+		$GLOBALS['http']->createCurl($_url);
+		$s=json_decode($GLOBALS['http'],true);
+		$_inProduct=array();
+		foreach ($s as $value) {
+			$_inProduct[]=$value;
+		}
+		
+		return $_inProduct;
+	}
 }
 
 ?>

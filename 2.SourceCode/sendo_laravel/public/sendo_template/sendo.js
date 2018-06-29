@@ -95,6 +95,33 @@ $(document).ready(function(){
 
 		}
 	});
+	$("#option_order").change(function()
+	{
+		var txt=$(this).val();
+		if(txt=='')
+		{
+			$(".content_items").css('display','none');
+		}
+		else
+		{
+			$.ajaxSetup({
+			  headers: {
+			    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			  }
+			});
+			$.ajax({
+				url:"show-order",
+				type:"post",
+				data:{search:txt},
+				dataType:"text",
+				success:function(data){
+					$(".content_items").html(data);
+				},
+				async:false
+			});
+
+		}
+	});
 
 	
 });

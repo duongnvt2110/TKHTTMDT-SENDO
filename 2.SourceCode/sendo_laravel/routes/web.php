@@ -46,3 +46,11 @@ Route::post('post-item',[
 	'as'=>'post-item',
 	'uses'=>'PostController@post_product'
 ]);
+Route::get('view-order',[
+	'as'=>'view-order',
+	'uses'=>'OrderController@get_index'
+]);
+Route::post('show-order',[
+	'as'=>'show-order',
+	'uses'=>'OrderController@show_order'
+]);
