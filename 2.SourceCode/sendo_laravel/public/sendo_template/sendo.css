@@ -1,0 +1,157 @@
+/*header*/
+.navbar
+{
+	margin-left: 15%;
+}
+
+/*menu_left*/
+.nav-link p{
+    margin: 0px!important;
+    padding: 0px!important;
+}
+.menu_left
+{
+    width: 230px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.background-silde-bar
+{
+	background-color: #eeeeee;
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(221,229,230,1);
+  -moz-box-shadow: 3px 2px 5px 0px rgba(221,229,230,1);
+  box-shadow: 3px 2px 5px 0px rgba(221,229,230,1);
+}
+.brand-link
+{
+	color: rgba(255,255,255,.8);
+    border-bottom: 1px solid #eeee;
+    padding: .8125rem .5rem;
+    font-size: 1.25rem;
+    display: block;
+    line-height: 1.5;
+    white-space: nowrap
+}
+.brand-link
+{
+    color:#6c757d
+}
+.brand-link:hover
+{
+    text-decoration: none;
+}
+.sidebar
+{
+	position: relative;
+}
+.nav-item
+{
+    width: 100%;
+}
+.nav-treeview
+{
+    margin-left: 15%;
+    
+}
+/*content*/
+.content
+{
+    margin-left: 15%;
+}
+
+.form-product
+{
+    padding-top: 50px;
+
+}
+
+.form-info
+{
+    position:relative;
+    display: inline-block;
+    width: 50%!important;
+}
+.button
+{
+    padding-left: 10px;
+}
+.tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.table td, .table th {
+    border: 1px solid #dddddd!important;;
+    text-align: left;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    margin-left: 250px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    /*margin: 5px auto;  15% from the top and centered */
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+.modal-content, .animate, .container {
+    width: 100%;
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+}
+.BodyProductList
+{
+    float: right;
+    padding-right: 20px;
+}

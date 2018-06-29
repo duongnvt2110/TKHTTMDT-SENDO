@@ -1,0 +1,54 @@
+CREATE TABLE account_seller
+(
+	sellerId int auto_increment PRIMARY KEY NOT NULL,
+	username varchar(30),
+	password varchar(30)
+);
+
+CREATE TABLE shop
+(
+	shopId varchar(30) PRIMARY KEY,
+	shopName varchar(30),
+	sellerId int,
+	FOREIGN KEY (sellerId) REFERENCES account_seller(sellerId)
+);
+
+CREATE TABLE items
+(
+	itemId varchar(30) PRIMARY KEY,
+	itemName varchar(30),
+	quantity_existed int
+);
+CREATE TABLE customer
+(
+	customerId varchar(30)PRIMARY KEY,
+	customerName varchar(30),
+	numberPhone varchar(12),
+	address varchar(255)
+);
+
+CREATE TABLE order_item
+(
+	orderId varchar(30) PRIMARY KEY,
+	deliver_status varchar(30),
+	totalPrice int,
+	shopId varchar(30),
+	FOREIGN KEY (shopId) REFERENCES shop(shopId)
+);
+
+CREATE TABLE shop_customer
+(
+	shopId varchar(30),
+	customerId varchar(30),
+	PRIMARY KEY (shopId,customerId),
+	FOREIGN KEY (shopId) REFERENCES shop(shopId),
+	FOREIGN KEY (customerId) REFERENCES customer(customerId)
+);
+CREATE TABLE shop_items
+(
+	shopId varchar(30),
+	itemId varchar(30),
+	PRIMARY KEY (shopId,itemId),
+	FOREIGN KEY (shopId) REFERENCES shop(shopId),
+	FOREIGN KEY (itemId) REFERENCES items(itemId)
+);
