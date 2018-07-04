@@ -1,0 +1,139 @@
+
+.container {
+  width: 80%;
+  /*padding-right: 7.5px;*/
+  padding-left: 30px;
+  padding-right: 15px;
+  /*margin-right: 150px;*/
+  margin-left: -10px;
+  margin-top: -6px;
+  margin-bottom: -20px;
+  /*float: right;*/
+  height: 272px;
+  width: 250px;
+  background-color: #F8F8F8;
+  background-attachment: scroll;
+}
+
+.container01 {
+    margin-left: 10px;
+    border-radius: 1px;
+    padding-right: 150px; 
+    background-color: #F8F8F8;
+    padding: 10px;
+    margin-top: 0px;
+}
+  
+
+.BodyProductList
+{
+    /*float: left;*//*
+    padding-right: 15px;
+    border: 0px solid #FFFFFF;*/
+    margin-top: -250px;
+    margin-bottom: 0px;
+    float: center;
+    /*background-color: blue;*/
+}
+
+.BodyProductList01
+{
+    /*float: left;*//*
+    padding-right: 15px;
+    border: 0px solid #FFFFFF;*/
+    margin-top: -60px;
+    margin-left: 0px;
+    margin-bottom: 150px;
+    float: center;
+    height: 50px;
+
+}
+
+div#page-wrapper div.container-fluid div.row{
+  /*margin-top: 15px;*/
+}
+
+form.modal-content{
+  margin-top: 55px;
+  margin-left: 0px;
+  margin-right: 1950px;
+  margin-bottom: 250px;
+}
+
+div#page-wrapper div.container-fluid02{
+  margin-left: 100px;
+}
+
+.Sort{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -20px;
+    padding-right: -25px;
+    padding-left: -15px;
+    background-color: #FFFFFF;
+    float: left;
+    width: 68px;
+    height: 600px;
+}
+
+form.form-product{
+
+}
+
+
+/*'style'=>'<!-- margin-left:-520px;
+margin-top: 3px; height:-1px;
+margin-right: 700px; 
+margin-bottom:220px; 
+padding: 10px; top:-270px; 
+float:left; -->'
+*/
+
+/*li.menu a.menu-sub:hover{
+    background-color: #FF754F;
+  }
+
+li.menu ul a.menu-sub1:hover{
+    background-color: #FF754F;
+  }
+*/
+/*.Select{
+  float: right;
+  float: top;
+  size: 320px;
+}
+*/
+
+/*@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
