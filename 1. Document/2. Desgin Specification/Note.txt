@@ -1,0 +1,6 @@
+﻿1.Overview-Chí-Dương Done
+2.Sequence Diagram-Dương-Dương Done
+3.Use Case-Lộc-Done
+4.Class Diagram-Dương-Dương Done
+5.DB Design-Dương-Dương Done
+6.UI Design-Lộc-Dương NotDone
