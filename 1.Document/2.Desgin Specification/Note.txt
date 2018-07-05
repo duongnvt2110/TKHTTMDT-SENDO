@@ -1,6 +1,0 @@
-﻿1.OverView-Chí-Dương Done
-2.Sequence-Dương-Dương Done
-3.UserCase-Lộc-Done
-4.ClassDiagram-Dương-Dương Done
-5.DesignDB-Dương-Dương Done
-6.Design UserInterFace-Lộc-Dương NotDone
